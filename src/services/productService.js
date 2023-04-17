@@ -5,7 +5,7 @@ export async function getProuctsList(searchTerm) {
     }`
   );
   if (!response.ok) {
-    throw { message: response.statusText, status: response.status };
+    throw { message: response.statusText, status: response.status }; //eslint-disable-line
   }
   const data = await response.json();
   return data;
@@ -15,7 +15,7 @@ export async function getProuct(id) {
     `${process.env.REACT_APP_HOST}/444/products/${id}`
   );
   if (!response.ok) {
-    throw { message: response.statusText, status: response.status };
+    throw { message: response.statusText, status: response.status }; //eslint-disable-line
   }
   const data = await response.json();
   return data;
@@ -25,7 +25,7 @@ export async function getFeaturedList() {
     `${process.env.REACT_APP_HOST}/444/featured_products`
   );
   if (!response.ok) {
-    throw { message: response.statusText, status: response.status };
+    throw { message: response.statusText, status: response.status }; //eslint-disable-line
   }
   const data = await response.json();
   return data;
