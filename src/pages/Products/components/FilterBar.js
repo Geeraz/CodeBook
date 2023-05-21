@@ -19,7 +19,7 @@ export const FilterBar = ({ setShow }) => {
           Filters
         </h5>
         <button
-          onChange={() => setShow(false)}
+          onClick={() => setShow(false)}
           type="button"
           data-drawer-dismiss="drawer-disable-body-scrolling"
           aria-controls="drawer-disable-body-scrolling"
